@@ -54,3 +54,49 @@ std::string checkerboard(int w, int h){
     return ans;
 }
 
+std::string cross(int s){
+    std::string ans = "";
+    int i, j;
+    std::string l;
+    for (i=0; i < s; i++){
+        l="";
+        for(j=0; j < s; j++){
+            if (i == j || i + j == s-1){
+                l += "*";
+            }
+            else{
+                l += " ";
+            }
+        }
+        l += "\n";
+        ans += l;
+    }
+    return ans;
+}
+
+std::string lowerTriangle(int s){
+    std::string ans = "";
+    std::string l = "";
+    int i;
+    for(i=0; i < s; i++){
+        l += "*";
+        ans += l;
+        ans += "\n"; 
+    }
+    return ans;
+}
+
+std::string upperTriangle(int s){
+    std::string ans = "";
+    std::string l = "";
+    int i;
+    for(i=0; i < s; i++){
+        l += "*";
+    }
+    l += "\n";
+    for(i=0; i < s; i++){
+        ans += l;
+        l[i] = ' ';
+    }
+    return ans;
+}

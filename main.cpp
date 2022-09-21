@@ -31,6 +31,25 @@ int main(){
     std::cout << checkerboard(0,7);
     std::cout << "testing checkerboard(7, 0)" << std::endl;
     std::cout << checkerboard(7,0);
-
+    std::cout << "testing cross(2)" << std::endl;
+    std::cout << cross(2);
+    std::cout << "testing cross(8)" << std::endl;
+    std::cout << cross(8);
+    std::cout << "testing cross(1)" << std::endl;
+    std::cout << cross(1);
+    std::cout << "testing cross(9)" << std::endl;
+    std::cout << cross(9);
+    std::cout << "testing cross(0)" << std::endl;
+    std::cout << cross(0);
+    std::cout << "testing lowerTriangle(1)" << std::endl;
+    std::cout << lowerTriangle(1);
+    std::cout << "testing lowerTriangle(3)" << std::endl;
+    std::cout << lowerTriangle(3);
+    std::cout << "testing lowerTriangle(0)" << std::endl;
+    std::cout << lowerTriangle(0);
+    std::cout << "testing lowerTriangle(5)" << std::endl;
+    std::cout << lowerTriangle(5);
+    std::cout << "testing upperTriangle(5)" << std::endl;
+    std::cout << upperTriangle(5);
     return 0;
 }
