@@ -51,5 +51,27 @@ int main(){
     std::cout << lowerTriangle(5);
     std::cout << "testing upperTriangle(5)" << std::endl;
     std::cout << upperTriangle(5);
+    std::cout << "testing upperTriangle(3)" << std::endl;
+    std::cout << upperTriangle(3);
+    std::cout << "testing upperTriangle(7)" << std::endl;
+    std::cout << upperTriangle(7);
+    std::cout << "testing upperTriangle(1)" << std::endl;
+    std::cout << upperTriangle(1);
+    std::cout << "testing trapezoid(12, 5)" << std::endl;
+    std::cout << trapezoid(12,5);
+    std::cout << "testing trapezoid(12, 6)" << std::endl;
+    std::cout << trapezoid(12,6);
+    std::cout << "testing trapezoid(12, 7)" << std::endl;
+    std::cout << trapezoid(12,7);
+    std::cout << "testing trapezoid(13, 7)" << std::endl;
+    std::cout << trapezoid(13,7);
+    std::cout << "testing trapezoid(13, 1)" << std::endl;
+    std::cout << trapezoid(13,1); 
+    std::cout << "testing trapezoid(13, 0)" << std::endl;
+    std::cout << trapezoid(13,0);
+    std::cout << "testing detailedCheckerboard(16, 11)" << std::endl;
+    std::cout << detailedCheckerboard(16,11); 
+    std::cout << "testing detailedCheckerboard(27, 27)" << std::endl;
+    std::cout << detailedCheckerboard(27,27);
     return 0;
 }

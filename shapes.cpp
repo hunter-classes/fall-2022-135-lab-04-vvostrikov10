@@ -100,3 +100,54 @@ std::string upperTriangle(int s){
     }
     return ans;
 }
+
+std::string trapezoid(int w, int h){
+    if ((w % 2 == 1 && w / 2 + 1 < h) || (w % 2 == 0 && w / 2 < h)){
+        return "Impossible shape!\n";
+    }
+    int i;
+    std::string l = "";
+    std::string ans = "";
+    for(i = 0; i < w; i++){
+        l += "*";
+    }
+    l += "\n";
+    for(i = 0; i < h; i++){
+        ans += l;
+        l[i] = ' ';
+        l[w - 1 -i] = ' ';
+    }
+    return ans;
+}
+
+std::string detailedCheckerboard(int w, int h){
+    std::string ans = "";
+    std::string l1 = "";
+    std::string l2 = "";
+    int i;
+    int c = 0;
+    int a = 0;
+    for(i = 0; i < w; i++){
+        if ((i / 3 + a) % 2 == 0){
+            l1 += "*";
+            l2 += " ";
+        }
+        else{
+            l1 += " ";
+            l2 += "*";    
+        }
+    }
+    if (w != 0){
+        l1 += "\n";
+        l2 += "\n";
+    }
+    for(i = 0; i < h; i++){
+        if ((i / 3 + a) % 2 == 0){
+            ans += l1;
+        }
+        else{
+            ans += l2; 
+        }
+    }
+    return ans;
+}
